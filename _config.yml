@@ -219,6 +219,7 @@ prose:
         field:
           element: "multiselect"
           value: ["project", "blog", "research"]
+          alterable: true
       - name: "layout"
         field:
           element: "hidden"
