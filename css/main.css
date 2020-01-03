@@ -385,50 +385,6 @@ footer .theme-by {
   }
 }
 
-/* --- Research preview --- */
-
-.research-preview a {
-  text-decoration: none;
-  color: #404040;
-}
-
-.research-preview a.pdf_link {
-  text-decoration: none;
-  color: {{ site.link-col }};
-}
-
-.research-preview a:focus,
-.research-preview a:hover {
-  text-decoration: none;
-  color: {{ site.hover-col }};
-}
-
-.research-preview a:visited,
-.research-preview a:active {
-  text-decoration: none;
-  color: #404040;
-}
-
-.research-preview .research-title {
-  font-size: 30px;
-  margin-top: 0;
-}
-
-.research-preview .research-subtitle {
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.research-abstract-container {
-  background-color: {{ site.paper-abstract-col }};
-  display: none;
-  width: 100%;
-}
-.research-abstract {
-  width: 100%;
-}
-
 /* --- Tags --- */
 
 .blog-tags {
