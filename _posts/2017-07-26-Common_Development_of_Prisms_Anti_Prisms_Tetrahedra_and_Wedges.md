@@ -4,7 +4,10 @@ layout: post
 title: Common Development of Prisms, Anti-Prisms, Tetrahedra, and Wedges
 subtitle: Amartya Shankha Biswas, Erik D Demaine
 tags: []
-image: /img/prism_creases_labeled.png
+year: 2017
+journal: CCCG
+pdf: /pdf/counting_stars.pdf
+<!--image: /img/prism_creases_labeled.png-->
 comments: true
 ---
 
