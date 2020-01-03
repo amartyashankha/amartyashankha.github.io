@@ -219,7 +219,13 @@ prose:
         field:
           element: "multiselect"
           value: ["project", "blog", "research"]
-          alterable: true
+          options:
+            - name: "Research"
+              value: "research"
+            - name: "Project"
+              value: "project"
+            - name: "Blog"
+              value: "blog"
       - name: "layout"
         field:
           element: "hidden"
