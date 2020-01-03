@@ -1,14 +1,14 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: Research
+subtitle: All author names are listed in lexicographical order, as is conventional in Theoretical CS.
 use-site-title: true
 ---
 
 <script type="text/javascript">
 function showAbstract(e){
     var div;
-    for(div = e.parentElement.nextSibling; div.className != "research-abstract-container"; div = div.nextSibling);
+    for(div = e.parentElement.nextSibling; div.className != "research-abstract"; div = div.nextSibling);
         if (div.style.display=="inline-block"){
             div.style.display="none";
         } else {
@@ -18,49 +18,31 @@ function showAbstract(e){
 }
 </script>
 
-<div class="posts-list">
+<ul class="research-list">
     {% for post in site.categories.research %}
-    <article class="research-preview">
+    <li class="research-preview">
         <h2 class="research-title">
             <a href="javascript:void(0)" onclick="showAbstract(this)"> {{ post.title }} </a>
-            {% comment %}<a href="{{ post.url | relative_url }}"> {{ post.title }} </a>{% endcomment %}
             [<a class="pdf_link" href="{{ post.pdf | relative_url }}">pdf</a>]
         </h2>
 
-        {% if post.subtitle %}
-        <h3 class="research-subtitle">
-            {{ post.subtitle }}
+        {% if post.authors %}
+        <h3 class="research-authors">
+            {{ post.authors }}
         </h3>
         {% endif %}
 
-        <!-- Post Date -->
-        {% comment %}<p class="post-meta">{% endcomment %}
-            {% comment %}Posted on {{ post.date | date: site.date_format }}{% endcomment %}
-        {% comment %}</p>{% endcomment %}
-
-        {% comment %}<div class="research-abstract-container">{% endcomment %}
-            {% comment %}<div class="research-abstract">{% endcomment %}
-                {% comment %}{{ post.content }}{% endcomment %}
-                {% comment %}{% assign excerpt_word_count = post.excerpt | number_of_words %}{% endcomment %}
-                {% comment %}{% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}{% endcomment %}
-                    {% comment %}<a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>{% endcomment %}
-                {% comment %}{% endif %}{% endcomment %}
-            {% comment %}</div>{% endcomment %}
-        {% comment %}</div>{% endcomment %}
-
-        {% if post.tags.size > 0 %}
-        <div class="blog-tags">
-            Tags:
-            {% if site.link-tags %}
-            {% for tag in post.tags %}
-            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-            {% endfor %}
-            {% else %}
-                {{ post.tags | join: ", " }}
+        <h3 class="research-journal">
+            {% if post.journal %}
+                {{ post.journal }}
             {% endif %}
-        </div>
-        {% endif %}
+            {% if post.year %}
+                <b> {{ post.year }} </b>
+            {% endif %}
+        </h3>
 
-    </article>
+        <div class="research-abstract"> {{ post.content }} </div>
+
+    </li>
     {% endfor %}
-</div>
+</ul>

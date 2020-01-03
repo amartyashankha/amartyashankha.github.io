@@ -2,11 +2,12 @@
 categories: [research]
 layout: post
 title: Sublinear-time algorithms for counting star subgraphs via edge sampling
-subtitle: Maryam Aliakbarpour, Amartya Shankha Biswas, Themis Gouleakis, John Peebles, Ronitt Rubinfeld, Anak Yodpinyanee
+authors: Maryam Aliakbarpour, Amartya Shankha Biswas, Themis Gouleakis, John Peebles, Ronitt Rubinfeld, Anak Yodpinyanee
+journal: Algorithmica
+year: 2018
 tags: []
 comments: true
 ---
-
 We study the problem of estimating the value of sums of the form $$S_p = \sum \binom{x_i}{p}$$
 when one has the ability to sample $$x_i\ge 0$$ with probability proportional to its magnitude.
 When $$p=2$$, this problem is equivalent to estimating the selectivity of a self-join query in database systems when one can sample rows randomly.

@@ -20,7 +20,7 @@ description: My personal web-site
 
 # List of links in the navigation bar
 navbar-links:
-  Bio: ""
+  Bio: "/"
   research: "research"
   Blog: "blog"
   Resources:
@@ -44,6 +44,9 @@ navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
+paper-abstract-col: "#EAF2A1"
+authors-col: "#EAF2A1"
+journal-col: "#EAF2A1"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
