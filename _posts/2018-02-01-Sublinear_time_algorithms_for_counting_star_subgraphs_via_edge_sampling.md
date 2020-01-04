@@ -5,6 +5,7 @@ title: Sublinear-time algorithms for counting star subgraphs via edge sampling
 authors: Maryam Aliakbarpour, Amartya Shankha Biswas, Themis Gouleakis, John Peebles, Ronitt Rubinfeld, Anak Yodpinyanee
 journal: Algorithmica
 year: 2018
+pdf: /pdf/counting_stars.pdf
 tags: []
 comments: true
 ---

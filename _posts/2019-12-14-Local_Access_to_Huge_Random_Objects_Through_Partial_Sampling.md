@@ -6,6 +6,7 @@ authors: Amartya Shankha Biswas, Ronitt Rubinfeld, Anak Yodpinyanee
 tags: []
 journal: Innovations in Theoretical Computer Science Conference (ITCS)
 year: 2020
+pdf: /pdf/partial_sampling.pdf
 comments: true
 ---
 Consider an algorithm performing a computation on a *huge random object* (for example a random graph or a "long" random walk).  Is it necessary to generate the entire object prior to the computation, or is it possible to provide query access to the object and sample it incrementally "on-the-fly" (as requested by the algorithm)?  Such an *implementation* should emulate the random object by answering queries in a manner consistent with an instance of the random object sampled from the true distribution (or close to it).  This paradigm is useful when the algorithm is sub-linear and thus, sampling the entire object up front would ruin its efficiency.
