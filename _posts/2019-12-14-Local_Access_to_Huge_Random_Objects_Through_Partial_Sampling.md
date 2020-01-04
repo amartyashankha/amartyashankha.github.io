@@ -2,7 +2,7 @@
 categories: [research]
 layout: post
 title: Local Access to Huge Random Objects Through Partial Sampling
-authors: Amartya Shankha Biswas, Ronitt Rubinfeld, Anak Yodpinyanee
+collaborators: Amartya Shankha Biswas, Ronitt Rubinfeld, Anak Yodpinyanee
 tags: []
 journal: Innovations in Theoretical Computer Science Conference (ITCS)
 year: 2020

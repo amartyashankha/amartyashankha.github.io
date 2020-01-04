@@ -2,7 +2,7 @@
 categories: [research]
 layout: post
 title: Common Development of Prisms, Anti-Prisms, Tetrahedra, and Wedges
-authors: Amartya Shankha Biswas, Erik D Demaine
+collaborators: Amartya Shankha Biswas, Erik D Demaine
 tags: []
 journal: Canadian Conference on Computational Geometry (CCCG)
 year: 2017

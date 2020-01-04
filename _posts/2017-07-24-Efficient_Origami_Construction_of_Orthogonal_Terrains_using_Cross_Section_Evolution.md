@@ -2,7 +2,7 @@
 categories: [research]
 layout: post
 title: Efficient Origami Construction of Orthogonal Terrains using Cross Section Evolution
-authors: Amartya Shankha Biswas, Erik D Demaine, Jason S Ku
+collaborators: Amartya Shankha Biswas, Erik D Demaine, Jason S Ku
 tags: []
 journal: International Meeting on Origami in Science, Mathematics and Education (7OSME)
 year: 2017

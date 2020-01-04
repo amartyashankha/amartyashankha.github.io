@@ -21,7 +21,8 @@ description: My personal web-site
 # List of links in the navigation bar
 navbar-links:
   Bio: "/"
-  research: "research"
+  Research: "research"
+  Projects: "projects"
   Blog: "blog"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -221,7 +222,6 @@ prose:
       - name: "categories"
         field:
           element: "multiselect"
-          value: ["project", "blog", "research"]
           options:
             - name: "Research"
               value: "research"
@@ -239,11 +239,23 @@ prose:
           label: "Post title"
           placeholder: "Title"
           alterable: true
-      - name: "subtitle"
+      - name: "collaborators"
         field:
           element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
+          label: "Collaborators"
+          placeholder: "Amartya Shankha Biswas, ..."
+          alterable: true
+      - name: "journal"
+        field:
+          element: "text"
+          label: "Journal or Conference"
+          placeholder: "Manuscript"
+          alterable: true
+      - name: "year"
+        field:
+          element: "text"
+          label: "Year of Publication"
+          placeholder: "2020"
           alterable: true
       - name: "date"
         field:
@@ -257,7 +269,14 @@ prose:
           element: "text"
           label: "Image"
           help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
+          placeholder: "/img/*"
+          alterable: true
+      - name: "pdf"
+        field:
+          element: "text"
+          label: "PDF"
+          help: "Add a PDF document to your post."
+          placeholder: "/pdf/*.pdf"
           alterable: true
       - name: "published"
         field:
