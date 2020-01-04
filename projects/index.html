@@ -1,0 +1,49 @@
+---
+layout: page
+title: Personal Projects
+subtitle: Fun stuff!
+use-site-title: true
+---
+
+<script type="text/javascript">
+function showAbstract(e){
+    var div;
+    for(div = e.parentElement.nextSibling; div.className != "research-abstract"; div = div.nextSibling);
+        if (div.style.display=="inline-block"){
+            div.style.display="none";
+        } else {
+            div.style.display="inline-block";
+        }
+   return true;
+}
+</script>
+
+<ul class="research-list">
+    {% for post in site.categories.research %}
+    <li class="research-preview">
+        <h2 class="research-title">
+            <a href="javascript:void(0)" onclick="showAbstract(this)"> {{ post.title }} </a>
+            [<a class="pdf_link" href="{{ post.pdf | relative_url }}">pdf</a>]
+        </h2>
+
+        {% if post.authors %}
+        <h3 class="research-authors">
+            {{ post.authors }}
+        </h3>
+        {% endif %}
+
+        <h3 class="research-journal">
+            {% if post.journal %}
+                {{ post.journal }}
+            {% endif %}
+            {% if post.year %}
+                <b> {{ post.year }} </b>
+            {% endif %}
+        </h3>
+
+        <div class="research-abstract"> {{ post.content }} </div>
+
+    </li>
+    {% endfor %}
+</ul>
+
