@@ -132,7 +132,12 @@ img {
   font-size: 25px;
   font-weight: 800;
   color: {{ site.navbar-title-text-col }};
-  margin-left: 20px
+}
+
+@media only screen and (max-width: 365px) {
+    .navbar-custom .navbar-brand {
+      font-size: 15px;
+    }
 }
 
 .navbar-custom .nav li a {
