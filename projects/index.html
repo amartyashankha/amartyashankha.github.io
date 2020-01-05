@@ -4,10 +4,10 @@ title: Personal Projects
 subtitle: Fun stuff!
 use-site-title: true
 ---
-<link rel="stylesheet" href=""{{ "/css/bootstrap-cards.scss" | relative_url }}">
 
 <div class="card-columns">
     {% for post in site.categories.projects %}
+    <div class="col-lg-4 col-md-4 col-sm-4">
     <div class="card">
         <img src="{{ post.image | relative_url }}" class="card-img-top" alt="...">
 
@@ -30,6 +30,7 @@ use-site-title: true
 
         <div class="research-abstract"> {{ post.content }} </div>
 
+    </div>
     </div>
     {% endfor %}
 </div>

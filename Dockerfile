@@ -5,4 +5,4 @@ COPY --chown=jekyll:jekyll Gemfile.lock .
 
 RUN bundle install --quiet --clean
 
-CMD ["jekyll", "serve"]
+CMD ["jekyll", "serve", "--livereload"]
