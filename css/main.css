@@ -850,3 +850,76 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+.masonry {
+  transition: all .25s ease-in-out;
+  column-gap: 5rem;
+  column-fill: initial;
+  margin-top: 5rem;
+}
+
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.brick-summary {
+  font-size: 30px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.masonry a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.masonry .brick {
+  display: inline-block;
+  vertical-align: top; /* Keep the item on the very top */
+  margin-bottom: 5rem;
+  width: 100%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.masonry .brick:hover {
+  opacity: .75;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.masonry .brick .brick-img {
+  transition: all .25s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+  border-top-left-radius: calc(0.5rem - 3px);
+  border-top-right-radius: calc(0.5rem - 3px);
+}
+
+.masonry .brick .project-authors {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #BF360C;
+}
+
