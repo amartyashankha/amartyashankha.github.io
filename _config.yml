@@ -23,7 +23,7 @@ navbar-links:
   Bio: "/"
   Research: "research"
   Projects: "projects"
-  Blog: "blog"
+  #Blog: "blog"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
@@ -60,6 +60,11 @@ footer-link-col: "#404040"
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
+
+
+# --- Miscellaneous options --- #
+
+#card-radius: "1rem"
 
 # --- Footer options --- #
 

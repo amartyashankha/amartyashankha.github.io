@@ -1,7 +1,30 @@
 ---
 layout: post
 title: ! 'Roller Coaster: East Campus 2015'
+authors: Jennie E Block, Ava Chen, Rebecca Kestin, Nicholas McCoy
 image: /projects/roller_coaster/main.jpg
+comments: true
 ---
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/J0_7pa_XUWk"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
-Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/plryaVLGQuI"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/9OROLQ8NjTc"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/MNMjUK2k7ic"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>

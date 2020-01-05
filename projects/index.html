@@ -1,37 +1,38 @@
 ---
 layout: page
 title: Personal Projects
-subtitle: Fun stuff!
+subtitle: Sometimes I make silly mechanical contraptions
 use-site-title: true
 ---
 
-<div class="card-columns">
+<div class="masonry">
     {% for post in site.categories.projects %}
-    <div class="col-lg-4 col-md-4 col-sm-4">
-    <div class="card">
-        <img src="{{ post.image | relative_url }}" class="card-img-top" alt="...">
+    <a href="{{ post.url | relative_url }}">
+    <div class="brick">
+        <img src="{{ post.image | relative_url }}" class="brick-img" alt="...">
 
-        <h2 class="post-title">{{ post.title }}</h2>
+        <div class="brick-summary">
+            <h3 class="post-title">{{ post.title }}</h3>
 
-        {% if post.authors %}
-        <h3 class="research-authors">
-            {{ post.authors }}
-        </h3>
-        {% endif %}
-
-        <h3 class="research-journal">
-            {% if post.journal %}
-                {{ post.journal }}
+            {% if post.authors %}
+            <h3 class="project-authors">
+                {{ post.authors }}
+            </h3>
             {% endif %}
-            {% if post.year %}
-                <b> {{ post.year }} </b>
-            {% endif %}
-        </h3>
 
-        <div class="research-abstract"> {{ post.content }} </div>
+            <h3 class="research-journal">
+                {% if post.journal %}
+                    {{ post.journal }}
+                {% endif %}
+                {% if post.year %}
+                    <b> {{ post.year }} </b>
+                {% endif %}
+            </h3>
+
+        </div>
 
     </div>
-    </div>
+    </a>
     {% endfor %}
 </div>
 
