@@ -4,27 +4,14 @@ title: Personal Projects
 subtitle: Fun stuff!
 use-site-title: true
 ---
+<link rel="stylesheet" href=""{{ "/css/bootstrap-cards.scss" | relative_url }}">
 
-<script type="text/javascript">
-function showAbstract(e){
-    var div;
-    for(div = e.parentElement.nextSibling; div.className != "research-abstract"; div = div.nextSibling);
-        if (div.style.display=="inline-block"){
-            div.style.display="none";
-        } else {
-            div.style.display="inline-block";
-        }
-   return true;
-}
-</script>
+<div class="card-columns">
+    {% for post in site.categories.projects %}
+    <div class="card">
+        <img src="{{ post.image | relative_url }}" class="card-img-top" alt="...">
 
-<ul class="research-list">
-    {% for post in site.categories.research %}
-    <li class="research-preview">
-        <h2 class="research-title">
-            <a href="javascript:void(0)" onclick="showAbstract(this)"> {{ post.title }} </a>
-            [<a class="pdf_link" href="{{ post.pdf | relative_url }}">pdf</a>]
-        </h2>
+        <h2 class="post-title">{{ post.title }}</h2>
 
         {% if post.authors %}
         <h3 class="research-authors">
@@ -43,7 +30,7 @@ function showAbstract(e){
 
         <div class="research-abstract"> {{ post.content }} </div>
 
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>
 
