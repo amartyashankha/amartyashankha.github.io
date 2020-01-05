@@ -133,10 +133,19 @@ img {
   font-weight: 800;
   color: {{ site.navbar-title-text-col }};
 }
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
     .navbar-custom .navbar-brand {
-      font-size: 15px;
+      font-size: 20px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .navbar-custom .navbar-brand {
+      font-size: 17px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .navbar-custom .navbar-brand {
+      font-size: 13px;
     }
 }
 
