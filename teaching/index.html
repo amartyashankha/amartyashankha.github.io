@@ -4,23 +4,47 @@ title: Teaching
 subtitle:
 use-site-title: true
 ---
-<ul class="research-list">
-    <li class="research-preview">
-        <h2 class="research-title">
-            <a href="javascript:void(0)" onclick="showAbstract(this)"> {{ post.title }} </a>
-            [<a class="pdf_link" href="{{ post.pdf | relative_url }}">pdf</a>]
-        </h2>
-
-        <h3 class="research-authors">
-            {{ post.collaborators }}
-        </h3>
-
-        <h3 class="research-journal">
-                {{ post.journal }}
-        </h3>
-
-        <div class="research-abstract"> {{ post.content }} </div>
-
+<ul class="teaching-list">
+    <li class="teaching-category">
+        <h2 class="teaching-title"> MIT-IIT Robotics Program (MIRP) </h2>
+        <div class="teaching-item">
+            Started a workshop to teach programming, design, and control theory to high school students in India.
+            Tasks included creating material, teaching, and constructing 40 robotics kits for use in the workshop.
+            <b class="teaching-year">Summer 2017</b>
+        </div>
     </li>
-    {% endfor %}
+    <li class="teaching-category">
+        <h2 class="teaching-title"> Middle East Entrepreneurs of Tomorrow (MEET) </h2>
+        <div class="teaching-item">
+            Taught programming to Israeli and Palestinian high school students in Jerusalem and Nazareth during MIT's
+            <i>Independent Activities Period</i>: <b class="teaching-year">January 2017</b>
+        </div>
+    </li>
+    <li class="teaching-category">
+        <h2 class="teaching-title"> Greatest Hits of 6.006 (Introduction to Algorithms) </h2>
+        <div class="teaching-item">
+            Created and taught a month long crash course in algorithm design, analysis, and programming during MIT's
+            <i>Independent Activities Period</i>: <b class="teaching-year">January 2016</b>
+        </div>
+    </li>
+    <li class="teaching-category">
+        <h2 class="teaching-title"> Teaching Assistant at MIT </h2>
+        <ul class="teaching-sublist">
+            <li class="teaching-item">
+                Design and Analysis of Algorithms (6.046): <b class="teaching-year">Fall 2017</b>
+            </li>
+            <li class="teaching-item">
+                Fundamentals of Programming (6.009): <b class="teaching-year">Spring 2017</b>
+            </li>
+            <li class="teaching-item">
+                Fundamentals of Programming (6.009): <b class="teaching-year">Fall 2016</b>
+            </li>
+            <li class="teaching-item">
+                Design and Analysis of Algorithms (6.046): <b class="teaching-year">Spring 2016</b>
+            </li>
+            <li class="teaching-item">
+                Design and Analysis of Algorithms (6.046): <b class="teaching-year">Spring 2015</b>
+            </li>
+        </ul>
+    </li>
 </ul>

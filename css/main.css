@@ -115,13 +115,23 @@ img {
   {% endif %}
 }
 
+.navbar-custom .nav li {
+  border-radius: 0.5rem;
+}
+
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 17px;
   letter-spacing: 1px;
 }
 
-.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand {
+  font-size: 25px;
+  font-weight: 800;
+  color: {{ site.navbar-title-text-col }};
+  margin-left: 20px
+}
+
 .navbar-custom .nav li a {
   font-weight: 800;
   color: {{ site.navbar-text-col }};
@@ -132,6 +142,11 @@ img {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: {{ site.hover-col }};
+}
+
+.navbar-custom .nav li:hover,
+.navbar-custom .nav li:focus {
+  background-color: {{ site.navbar-hover-col }};
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -494,6 +509,7 @@ footer .theme-by {
     float: left;
   }
 }
+
 /* --- Post and page headers --- */
 
 .intro-header {
@@ -584,7 +600,7 @@ footer .theme-by {
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading {
-    padding: 150px 0;
+    padding: 300px 0px 100px;
   }
   .intro-header .page-heading h1 {
     font-size: 80px;
@@ -851,6 +867,9 @@ pre {
   font-size: 16px;
 }
 
+
+/* Masonry Cards */
+
 .masonry {
   transition: all .25s ease-in-out;
   column-gap: 5rem;
@@ -904,7 +923,7 @@ pre {
 
 .masonry .brick:hover {
   opacity: .75;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 .masonry .brick .brick-img {
@@ -923,3 +942,32 @@ pre {
   color: #BF360C;
 }
 
+
+/* Teaching tags */
+
+.teaching-list .teaching-category .teaching-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: {{ site.teaching-title-col }};
+}
+
+@media only screen and (min-width: 768px) {
+  .teaching-list .teaching-category .teaching-title {
+    font-size: 36px;
+  }
+}
+
+.teaching-list .teaching-category .teaching-item {
+  margin: 0;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.teaching-list .teaching-category .teaching-item .teaching-year {
+  font-weight: 900;
+  color: {{ site.teaching-year-col }};
+}
