@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ! 'Ball on Plate Balancing: PID Control Teaching Kit'
-authors: Virup Gubba, Maya Nasr
 image: /projects/ball_and_plate/main.jpg
 comments: true
 ---
