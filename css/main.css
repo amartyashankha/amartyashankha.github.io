@@ -17,8 +17,10 @@ body {
   background-attachment: fixed;
   {% endif %}
 }
-body .home {
-  font-size: 25px;
+@media only screen and (min-width: 768px) {
+    body .home {
+      font-size: 25px;
+    }
 }
 p {
   line-height: 1.5;
