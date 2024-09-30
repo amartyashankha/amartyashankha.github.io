@@ -1,6 +1,6 @@
 ---
 layout: page
-bigimg: /img/cover.jpg
+cover-img: /img/cover.jpg
 home: true
 show-avatar: false
 home: true
