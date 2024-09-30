@@ -1,8 +1,7 @@
 ---
 layout: page
-cover-img: /img/cover.jpg
 home: true
-show-avatar: false
+show-avatar: true
 home: true
 ---
 My name is Amartya Shankha Biswas, but most people call me Shankha.
