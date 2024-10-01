@@ -2,7 +2,6 @@
 layout: page
 home: true
 show-avatar: true
-home: true
 ---
 My name is Amartya Shankha Biswas, but most people call me Shankha.
 I grew up in the university campus of [IIT Kharagpur](http://www.iitkgp.ac.in/) in India.
