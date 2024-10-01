@@ -10,7 +10,7 @@ comments: true
 ---
 For a graph $$G$$ on $$n$$ vertices, naively sampling the position of a random walk of at time $$t$$ requires work $$\Omega(t)$$.
 We desire **local access** algorithms supporting $$position(t)$$ queries, which return the position of a random walk from some fixed start vertex $$s$$ at time $$t$$,
-where the joint distribution of returned positions is $$1/\poly(n)$$ close to those of a uniformly random walk in $$\ell_1$$ distance.
+where the joint distribution of returned positions is $$1/poly(n)$$ close to those of a uniformly random walk in $$\ell_1$$ distance.
 
 We first give an algorithm for local access to random walks on a given undirected $$d$$-regular graph with $$\widetilde{O}(\frac{1}{1-\lambda}\sqrt{n})$$ runtime per query,
 where $$\lambda$$ is the second-largest eigenvalue of the random walk matrix of the graph in absolute value. Since random $$d$$-regular graphs $$G(n,d)$$ are expanders with high probability,
