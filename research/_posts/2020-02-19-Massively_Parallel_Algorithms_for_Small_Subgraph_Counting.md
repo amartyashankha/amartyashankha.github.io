@@ -1,28 +1,26 @@
 ---
 layout: post
-title: Massively Parallel Algorithms for Small Subgraph Counting
-collaborators: Amartya Shankha Biswas, Talya Eden, Quanquan C. Liu, Slobodan Mitrović, Ronitt Rubinfeld
+title: Massively Parallel Algorithms for Distance Approximation and Spanners
+collaborators: Amartya Shankha Biswas, Michal Dory, Mohsen Ghaffari, Slobodan Mitrović, Yasamin Nazari
 tags: []
-journal: APPROX-RANDOM 2022
-year: 2022
-pdf: /research/pdf/MPC_subgraphs.pdf
+journal: Symposium on Parallelism in Algorithms and Architectures (SPAA)
+year: 2021
+pdf: /research/pdf/MPC}_spanners.pdf
 comments: true
 ---
-With the prevalence of large graphs, it is becoming increasingly important to design scalable algorithms. Over the last two decades, frameworks for parallel computation, such as MapReduce, Hadoop, Spark and Dryad, gained significant popularity.
-The Massively Parallel Computation (MPC) model is a de-facto standard for studying these frameworks theoretically.
-Subgraph counting is a fundamental problem in analyzing massive graphs, often studied in the context of social and complex networks. There is a rich literature on designing scalable algorithms for this problem, with the main challenge to design methods which are both efficient and accurate.
-In this work, we tackle this challenge and design several new algorithms for subgraph counting in MPC.
+Over the past decade, there has been increasing interest in distributed/parallel algorithms for processing large-scale graphs.
+By now, we have quite fast algorithms---usually sublogarithmic-time and often $$\poly(\log\log n)$$-time,
+or even faster---for a number of fundamental graph problems in the massively parallel computation ($$\textt{MPC}$$) model.
+This model is a widely-adopted theoretical abstraction of MapReduce style settings,
+where a number of machines communicate in an all-to-all manner to process large-scale data.
+Contributing to this line of work on $$\textt{MPC}$$ graph algorithms,
+we present $$poly(\log k) \in \poly(\log\log n)$$ round $$\textt{MPC}$$ algorithms for computing $$O(k^{1+{o(1)}})$$-spanners
+in the strongly sublinear regime of local memory. To the best of our knowledge, these are the first sublogarithmic-time $$\textt{MPC}$$ algorithms for spanner construction.
 
-Given a graph $$G$$ over $$n$$ vertices, $$m$$ edges and $$T$$ triangles,
-our first main result is an algorithm that, with high probability,
-outputs a $$(1+\eps)$$-approximation to $$T$$, with asymptotically **optimal round and total space complexity**
-provided any $$S \geq \max{(\sqrt m, n^2/m)}$$ space per machine and assuming $$T=\Omega(\sqrt{m/n})$$.
+\medskip
+\noindent As primary applications of our spanners, we get  two important implications, as follows:
+\begin{itemize}
+    \item For the $$\textt{MPC}$$ setting, we get an $$O(\log^2\log n)$$-round algorithm for $$O(\log^{1+o(1)} n)$$ approximation of all pairs shortest paths (APSP) in the near-linear regime of local memory. To the best of our knowledge, this is the first sublogarithmic-time $$\textt{MPC}$$ algorithm for distance approximations.
 
-
-Our second main result is an $$\hideo(\log \log n)$$-rounds algorithm for exactly counting the number of triangles, parametrized by the **arboricity** $$\alpha$$ of the input graph. 	The space per machine is $$O(n^{\delta})$$ for any constant $$\delta$$, and the total space is $$O(m\alpha)$$, which matches the **time** complexity of (combinatorial) triangle counting in the sequential model.
-	We also prove that this result can be extended to exactly counting $$k$$-cliques for any constant $$k$$, with the same round complexity and total space $$O(m\alpha^{k-2})$$. Alternatively,  allowing $$O(\alpha^2)$$ space per machine, the total space requirement reduces to $$O(n\alpha^2)$$.
-
-Finally, we prove that a recent result of  Bera, Pashanasangi and Seshadhri (ITCS 2020) for exactly counting all subgraphs of size at most $$5$$, can be implemented in the MPC model in
-$$\tilde{O}_{\delta}(\sqrt{\log n})$$ rounds, $$O(n^{\delta})$$ space per machine and $$O(m\alpha^3)$$
- total space. Therefore, this result also exhibits the phenomenon that a time bound
- in the sequential model translates to a space bound in the MPC model.
+    \item Our result above also extends to the \clique model of distributed computing, with the same round complexity and approximation guarantee. This gives the first \emph{sub-logarithmic} algorithm for approximating APSP in \emph{weighted} graphs in the \clique model.
+\end{itemize}
