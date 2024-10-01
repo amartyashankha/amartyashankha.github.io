@@ -5,7 +5,7 @@ collaborators: Amartya Shankha Biswas, Michal Dory, Mohsen Ghaffari, Slobodan Mi
 tags: []
 journal: Symposium on Parallelism in Algorithms and Architectures (SPAA)
 year: 2021
-pdf: /research/pdf/MPC}_spanners.pdf
+pdf: /research/pdf/MPC_spanners.pdf
 comments: true
 ---
 Over the past decade, there has been increasing interest in distributed/parallel algorithms for processing large-scale graphs.
@@ -19,6 +19,6 @@ in the strongly sublinear regime of local memory. To the best of our knowledge, 
 
 As primary applications of our spanners, we get  two important implications, as follows:
 
-    * For the $$\texttt{MPC}$$ setting, we get an $$O(\log^2\log n)$$-round algorithm for $$O(\log^{1+o(1)} n)$$ approximation of all pairs shortest paths (APSP) in the near-linear regime of local memory. To the best of our knowledge, this is the first sublogarithmic-time $$\texttt{MPC}$$ algorithm for distance approximations.
+For the $$\texttt{MPC}$$ setting, we get an $$O(\log^2\log n)$$-round algorithm for $$O(\log^{1+o(1)} n)$$ approximation of all pairs shortest paths (APSP) in the near-linear regime of local memory. To the best of our knowledge, this is the first sublogarithmic-time $$\texttt{MPC}$$ algorithm for distance approximations.
 
-    * Our result above also extends to the \clique model of distributed computing, with the same round complexity and approximation guarantee. This gives the first \emph{sub-logarithmic} algorithm for approximating APSP in \emph{weighted} graphs in the \clique model.
+Our result above also extends to the \clique model of distributed computing, with the same round complexity and approximation guarantee. This gives the first \emph{sub-logarithmic} algorithm for approximating APSP in \emph{weighted} graphs in the \clique model.
